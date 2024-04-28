@@ -9,11 +9,6 @@ macro_rules! Vita_App {
         if file_path.ends_with(".css") {
             let mut code = String::new();
             let comment = "/* Created By css-Vita */";
-
-
-
-
-
         // this is the code will show at css
         //LOGIC HERE
 
@@ -21,20 +16,6 @@ macro_rules! Vita_App {
 
         //LOGIC HERE
         // this is the code will show at css
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             if let Ok(mut file) = OpenOptions::new().append(true).open(&file_path) {
                 if let Err(e) = writeln!(file, "{} {}",comment,code) {
                     eprintln!("Error writing to file: {}", e);
