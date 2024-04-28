@@ -3,7 +3,7 @@ use std::io::prelude::*;
 mod macros;
 fn main() {
     Vita_App!(
-        "/media/ak/96BC3336BC330FEB/cargo_projects/css-vita/css-vita/style.css",
+        "./styles.css",
         body{
             color:"blue"
         }
